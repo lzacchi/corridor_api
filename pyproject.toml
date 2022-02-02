@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "corridor_api"
+version = "0.1.0"
+description = "Simple API that gets information from VIA Rail's Windsor-Quebec Corridor live map"
+authors = ["Lucas Zacchi"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.0.2"
+mypy = "^0.931"
+black = "^22.1.0"
+MarkupSafe = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
