@@ -32,3 +32,7 @@ def display_train(train_number: str) -> Any:
     train_info = get_trains_info()
 
     return train_info[escape(train_number)]
+
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0")
