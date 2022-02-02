@@ -1,12 +1,9 @@
 from typing import Any
-from flask import Flask
 from markupsafe import escape  # preventhtml injection
 
 import requests
 import requests_cache
 import urllib.request, json
-
-app = Flask(__name__)
 
 requests_cache.install_cache("trains_cache", expire_after=300)
 
