@@ -17,7 +17,6 @@ def get_trains_info() -> Any:
     with requests.Session() as session:
         response = session.get(url)
         trains_info = response.json()
-        print(response.from_cache)
 
     return trains_info
 
