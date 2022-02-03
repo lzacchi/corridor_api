@@ -6,7 +6,7 @@ import requests
 import requests_cache
 import json
 
-app = Flask(__name__)
+api_corridor = Flask(__name__)
 
 requests_cache.install_cache("trains_cache", expire_after=300)
 
