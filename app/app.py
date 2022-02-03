@@ -35,4 +35,4 @@ def display_train(train_number: str) -> Any:
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
