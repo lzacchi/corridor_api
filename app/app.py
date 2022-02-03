@@ -6,7 +6,11 @@ import requests
 import requests_cache
 import json
 
+<<<<<<< HEAD
 corridor_api = Flask(__name__)
+=======
+app= Flask(__name__)
+>>>>>>> refs/remotes/origin/master
 
 requests_cache.install_cache("trains_cache", expire_after=300)
 
