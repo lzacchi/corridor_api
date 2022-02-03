@@ -6,7 +6,7 @@ import requests
 import requests_cache
 import json
 
-api_corridor = Flask(__name__)
+app= Flask(__name__)
 
 requests_cache.install_cache("trains_cache", expire_after=300)
 
@@ -35,4 +35,4 @@ def display_train(train_number: str) -> Any:
 
 
 if __name__ == "__main__":
-    api_corridor.run(port=5000)
+    app.run(port=5000)
