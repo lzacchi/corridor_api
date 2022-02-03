@@ -21,13 +21,13 @@ def get_trains_info() -> Any:
     return trains_info
 
 
-@app.route("/")
+@corridor_api.route("/")
 def display_trains_info() -> Any:
     trains_info = get_trains_info()
     return trains_info
 
 
-@app.route("/<train_number>")
+@corridor_api.route("/<train_number>")
 def display_train(train_number: str) -> Any:
     train_info = get_trains_info()
 
