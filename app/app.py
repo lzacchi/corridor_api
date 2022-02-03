@@ -21,13 +21,13 @@ def get_trains_info() -> Any:
     return trains_info
 
 
-@app.route("/trains-info")
+@app.route("/")
 def display_trains_info() -> Any:
     trains_info = get_trains_info()
     return trains_info
 
 
-@app.route("/trains-info/<train_number>")
+@app.route("/<train_number>")
 def display_train(train_number: str) -> Any:
     train_info = get_trains_info()
 
@@ -35,4 +35,4 @@ def display_train(train_number: str) -> Any:
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+    app.run()
