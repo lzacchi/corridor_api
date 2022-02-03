@@ -5,7 +5,7 @@ description = "Simple API that gets information from VIA Rail's Windsor-Quebec C
 authors = ["Lucas Zacchi"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.10.2"
 Flask = "^2.0.2"
 mypy = "^0.931"
 black = "^22.1.0"
